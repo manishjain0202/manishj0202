@@ -1,0 +1,1 @@
+insert into employees values (1,'manish@gmail.com','manish','jain')
