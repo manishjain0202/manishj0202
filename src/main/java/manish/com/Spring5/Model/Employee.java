@@ -1,4 +1,4 @@
-package manish.spring5.Spring5.Model;
+package manish.com.Spring5.Model;
 
 import javax.persistence.*;
 

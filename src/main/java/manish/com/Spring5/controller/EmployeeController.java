@@ -1,8 +1,9 @@
-package manish.spring5.Spring5.controller;
+package manish.com.Spring5.controller;
 
-import manish.spring5.Spring5.Model.Employee;
-import manish.spring5.Spring5.exception.ResourceNotFoundException;
-import manish.spring5.Spring5.repository.EmployeeRepository;
+import manish.com.Spring5.Model.Employee;
+import manish.com.Spring5.exception.ResourceNotFoundException;
+import manish.com.Spring5.repository.EmployeeRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

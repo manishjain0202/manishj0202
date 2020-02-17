@@ -1,4 +1,4 @@
-package manish.spring5.Spring5.exception;
+package manish.com.Spring5.exception;
 
 import java.util.Date;
 

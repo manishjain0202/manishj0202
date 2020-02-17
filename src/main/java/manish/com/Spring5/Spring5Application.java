@@ -1,4 +1,4 @@
-package manish.spring5.Spring5;
+package manish.com.Spring5;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
