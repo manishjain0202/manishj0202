@@ -1,14 +1,27 @@
 package manish.com.Spring5.Model;
 
-import javax.persistence.*;
+import java.sql.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "employees")
 public class Employee {
     private long id;
+    @Size(min=2, message = "Name should have atleast 2 chars")
     private String firstName;
     private String lastName;
     private String emailId;
+    @Past
+    private Date dob;
+    
     public Employee() {
     }
     public Employee(String firstName, String lastName, String emailId) {
