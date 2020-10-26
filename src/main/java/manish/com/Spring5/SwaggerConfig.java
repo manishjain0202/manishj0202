@@ -1,3 +1,4 @@
+package manish.com.Spring5;
 import org.springframework.context.annotation.Configuration;
 
 import springfox.documentation.service.Documentation;
