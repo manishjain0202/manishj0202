@@ -4,6 +4,7 @@ import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.databind.ser.FilterProvider;
+import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
 import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
 
 import manish.com.Spring5.Model.Employee;
@@ -15,7 +16,9 @@ public class FilteringController {
 	{
 		Employee emp = new Employee();
 		
-		FilterProvider filters = new SimpleFilterProvider();
+		SimpleBeanPropertyFilter filter = SimpleBeanPropertyFilter.filterOutAllExcept("name");
+		
+		FilterProvider filters = new SimpleFilterProvider().addFilter("beanfilter", filter);
 		
 		MappingJacksonValue mapping = new MappingJacksonValue(emp);
 		mapping.setFilters(filters);
